@@ -38,4 +38,12 @@ const btnStyle = {
   cursor: 'pointer',
   float: 'right'
 }
+
+// Proptypes
+TodoItem.propTypes = {
+  todo: PropTypes.object.isRequired,
+  markComplete: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired,
+}
+
 export default TodoItem;
